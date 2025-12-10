@@ -15,7 +15,7 @@ except ImportError:
     XGB_AVAILABLE = False
     print("XGboost not found")
 
-API_KEY = "AIzaSyCABJrbuza3AKuFhbp0gZKKl-jdGaL7eck" 
+API_KEY = "INSERT YOUR API KEY" 
 EMBEDDING_MODEL = "text-embedding-004"
 BASE_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/"
 EMBEDDING_API_URL = f"{BASE_API_URL}{EMBEDDING_MODEL}:embedContent?key={API_KEY}"
@@ -434,3 +434,4 @@ if API_KEY != "AIzaSyASRU-gsPRUnc5yPSYzk6P4DoA_4KJH-1U":
 else:
     print("\nWARNING: API Key is missing. Stage 1 (LTR) will use random embeddings, reducing accuracy.")
     print("To test the full LTR system, consider adding a valid API Key.")
+
